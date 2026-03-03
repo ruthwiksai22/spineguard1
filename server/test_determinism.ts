@@ -1,9 +1,9 @@
-import { analyzeMedicalImageWithML } from './ml-model';
+import { analyzeMedicalImageWithML } from './ml-model.js';
 import fs from 'fs';
 import path from 'path';
 
 async function testFeatureExtraction() {
-    const testImage = path.join(process.cwd(), '../test-data/sample-spine.png');
+    const testImage = path.join(process.cwd(), '../test-data.js/sample-spine.png');
 
     if (!fs.existsSync(testImage)) {
         console.log("Test image not found");

@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { SeverityBadge } from "./severity-badge";
+import { SeverityBadge } from "./severity-badge.js";
 import { ConfidenceMeter } from "./confidence-meter";
 import type { DiagnosticFinding } from "@shared/schema";
 import { ChevronRight, AlertCircle, CheckCircle } from "lucide-react";

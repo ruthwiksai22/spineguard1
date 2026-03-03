@@ -4,11 +4,10 @@ import multer from "multer";
 import { storage } from "./storage.js";
 import { analyzeWithMedicalModel } from "./ml-analysis.js";
 import { analyzeWithSCT } from "./sct-bridge.js";
-import { insertPatientSchema, insertScanSchema, insertAnalysisSchema } from "@shared/schema";
+import { insertPatientSchema, insertScanSchema, insertAnalysisSchema } from "../shared/schema.js";
 import { parseDICOM } from "./dicom-parser.js";
 import { updateAnalysisProgress } from "./websocket-handler.js";
 import { ensureAuthenticated } from "./auth.js";
-
 // Configure multer for memory storage
 const upload = multer({
   storage: multer.memoryStorage(),

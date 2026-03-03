@@ -7,8 +7,8 @@ import type {
   HiddenAbnormalityResult,
   BloodFlowAnalysisResult
 } from "@shared/schema";
-import { analyzeMedicalImageWithML } from "./ml-model";
-import { generateGradCAMHeatmaps } from "./gradcam-generator";
+import { analyzeMedicalImageWithML } from "./ml-model.js";
+import { generateGradCAMHeatmaps } from "./gradcam-generator.js";
 
 import {
   generateFinding,
@@ -17,7 +17,7 @@ import {
   generateSoftTissueAnalysis,
   generateHiddenAbnormalityAnalysis,
   generateBloodFlowAnalysis
-} from "./analysis-utils";
+} from "./analysis-utils.js";
 
 export async function analyzeWithMedicalModel(
   imageBuffer: Buffer,

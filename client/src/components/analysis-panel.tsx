@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { DiagnosticCard } from "./diagnostic-card";
+import { DiagnosticCard } from "./diagnostic-card.js";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import type { AnalysisResults } from "@shared/schema";
 import { Activity, AlertTriangle } from "lucide-react";

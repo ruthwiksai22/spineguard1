@@ -10,8 +10,8 @@ import {
   generateSoftTissueAnalysis,
   generateHiddenAbnormalityAnalysis,
   generateBloodFlowAnalysis
-} from "./analysis-utils";
-import { generateGradCAMHeatmaps } from "./gradcam-generator";
+} from "./analysis-utils.js";
+import { generateGradCAMHeatmaps } from "./gradcam-generator.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
