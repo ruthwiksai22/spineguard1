@@ -4,7 +4,7 @@ import {
   type Analysis, type InsertAnalysis,
   type User, type InsertUser
 } from "@shared/schema";
-import { prisma } from "./db";
+import { prisma } from "./db.js";
 import session from "express-session";
 import MemoryStoreFactory from "memorystore";
 

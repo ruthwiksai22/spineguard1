@@ -1,4 +1,4 @@
-import { analyzeWithSCT } from './sct-bridge';
+import { analyzeWithSCT } from './sct-bridge.js';
 import fs from 'fs';
 import path from 'path';
 

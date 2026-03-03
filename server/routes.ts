@@ -1,13 +1,13 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import multer from "multer";
-import { storage } from "./storage";
-import { analyzeWithMedicalModel } from "./ml-analysis";
-import { analyzeWithSCT } from "./sct-bridge";
+import { storage } from "./storage.js";
+import { analyzeWithMedicalModel } from "./ml-analysis.js";
+import { analyzeWithSCT } from "./sct-bridge.js";
 import { insertPatientSchema, insertScanSchema, insertAnalysisSchema } from "@shared/schema";
-import { parseDICOM } from "./dicom-parser";
-import { updateAnalysisProgress } from "./websocket-handler";
-import { ensureAuthenticated } from "./auth";
+import { parseDICOM } from "./dicom-parser.js";
+import { updateAnalysisProgress } from "./websocket-handler.js";
+import { ensureAuthenticated } from "./auth.js";
 
 // Configure multer for memory storage
 const upload = multer({
